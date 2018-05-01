@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>정주영♡김재영</title>
+
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/gallery.css">
+        <link rel="stylesheet" type="text/css" href="./css/slick.css">
+        
+        <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="./js/slick.min.js"></script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=GXwh3V9DlMzOIgNbuKw1"></script>
+        <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <script type="text/javascript" src="./js/use.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <img src="./img/invitations.png" />
+            </div>
+            <div class="invitation">
+                <div class="inv_border">
+                    <p class="invitation_header">모시는글</p>
+                    <br />
+                    <p class="invitation_main_text"></p>
+                    <br />
+                    <br />
+                    <p class="invitation_family">
+                        정해일, 강현주<span class="subscript">의 장남</span><span class="hostname"> 주영</span>
+                        <br />
+                        김부겸, 김영숙<span class="subscript">의 차녀</span><span class="hostname"> 재영</span>
+                    </p>
+                </div>
+            </div>
+            <div class="extra_info">
+                <img src="./img/notallow.png" />
+            </div>
+            <div class="gallery">
+                <div class="title_image"><img src="./img/rose.png" /></div>
+                <div class="content_title"><p>갤러리</p></div>
+                <div class="slider-for">
+                    <div><img src="./img/gallery/1.png" /></div>
+                    <div><img src="./img/gallery/2.png" /></div>
+                    <div><img src="./img/gallery/3.png" /></div>
+                    <div><img src="./img/gallery/4.png" /></div>
+                    <div><img src="./img/gallery/5.png" /></div>
+                    <div><img src="./img/gallery/6.png" /></div>
+                    <div><img src="./img/gallery/7.png" /></div>
+                </div>
+                <div class="slider-nav">
+                    <div><img src="./img/gallery/1.png" /></div>
+                    <div><img src="./img/gallery/2.png" /></div>
+                    <div><img src="./img/gallery/3.png" /></div>
+                    <div><img src="./img/gallery/4.png" /></div>
+                    <div><img src="./img/gallery/5.png" /></div>
+                    <div><img src="./img/gallery/6.png" /></div>
+                    <div><img src="./img/gallery/7.png" /></div>
+                </div>
+
+                <script>
+                    $('.slider-for').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        fade: true,
+                        asNavFor: '.slider-nav',
+                        autoplay: true,
+                        autoplaySpeed: 2500
+                    });
+                    $('.slider-nav').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        asNavFor: '.slider-for',
+                        dots: false,
+                        centerMode: true,
+                        focusOnSelect: true
+                    });
+                </script>
+            </div>
+            <div class="location">
+                <div class="content_title wildflower">
+                    <img src="./img/wildflower.png" />
+                    <p>오시는길</p>
+                </div>
+                <div id="map" style="width:100%;height:300px;"></div>
+                <div class="howtocome">
+                    <div class="call_navi">
+                        <div>
+                            <a href="https://m.map.naver.com/directions/#/main//%25EC%2586%25A1%25EB%25A6%25BC%25EA%25B3%25A0%25EB%2593%25B1%25ED%2595%2599%25EA%25B5%2590,127.1305507,37.3916716,127.1312843,37.3927648,false,12029410"><img src="img/ico/naver_navi.png" /></a>
+                            <a href="javascript:kakao_navi();"><img src="img/ico/kakao_navi.png" /></a>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <p><span>송림중,고등학교 강당 (분당우리교회)</span></p>
+                        <p>경기도 성남시 분당구 이매로 100</p>
+                        <br />
+                        <br />
+                        <div>
+                            <p>
+                                <span>지하철</span>
+                                <ul>
+                                    <li>분당선,경강선 이매역</li>
+                                    <li>3분 출구에서 도보 5분</li>
+                                </ul>
+                            </p>
+                            <br />
+                            <p>
+                                <span>버스</span>
+                                <ul>
+                                    <li>마을버스: 71, 75, 251 </li>
+                                    <li>일반버스: 17, 17-1, 33-1, 51, 52, 116-3, 119, 220, 250, 300, 720, 720-1</li>
+                                    <li>좌석버스: 3330, 4000, 9408, 9607</li>
+                                </ul>
+                            </p>
+                            <br />
+                            <p>
+                                <span>자가용</span>
+                                <ul>
+                                    <li>도로명: 경기도 성남시 분당구 이매로 100</li>
+                                    <li>지번: 경기도 성남시 분당구 이매동 378</li>
+                                    <li>송림중,고등학교 강당 (분당우리교회)</li>
+                                    <li>송림중,고등학교 운동장에 주차하실 수 있습니다.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <script>
+                    var mapOptions = {
+                        center: new naver.maps.LatLng(37.392205, 127.131750),
+                        zoom: 11
+                    };
+
+                    var map = new naver.maps.Map('map', mapOptions);
+
+                    var marker = new naver.maps.Marker({
+                        position: new naver.maps.LatLng(37.392205, 127.131750),
+                        map: map
+                    });
+                </script>
+            </div>
+            <div class="calltohost">
+                <ul>
+                    <li class="call_btn">
+                        <a href="tel:01092201433">
+                            <div class="call_wrap">
+                                <p class="call_txt"><span>GROOM</span>신랑에게 전화하기</p>
+                                <p><img src="./img/ico/phone_groom.png" /></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="call_btn">
+                        <a href="tel:01074666441">
+                            <div class="call_wrap">
+                                <p class="call_txt"><span>BRIDE</span>신부에게 전화하기</p>
+                                <p><img src="./img/ico/phone_bride.png" /></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sharesns">
+                <a href="javascript:sendLink();">
+                    <div>
+                        <p><span>KAKAOTALK</span>카카오톡 공유하기</p>
+                        <p><img src="./img/ico/kakao.png" /></p>
+                    </div>
+                </a>
+                <script type='text/javascript'>
+                    // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                    Kakao.init('d818862ffdaabbbbc92c01581e24b795');
+
+                    function kakao_navi(){
+                        Kakao.Navi.start({
+                            name: "송림고등학교",
+                            x: 127.131750,
+                            y: 37.392205, 
+                            coordType: 'wgs84'
+                        });
+                    }
+
+                    function sendLink() {
+                        Kakao.Link.sendDefault({
+                            objectType: 'feed',
+                            content: {
+                                title: '정주영♡김재영',
+                                description: '2018.06.16(토) 12:00PM\n분당우리교회(송림고등학교)',
+                                imageUrl: 'http://52.231.189.146:8048/img/gallery/4.png',
+                                link: {
+                                    mobileWebUrl: 'http://52.231.189.146:8048',
+                                    webUrl: 'http://52.231.189.146:8048'
+                                }
+                            }
+                        });
+                    }
+                  </script>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

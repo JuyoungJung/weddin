@@ -1,0 +1,79 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend{margin:0;padding:0;border:0;}
+ol, ul{list-style:none;}
+img {vertical-align:middle; border:none;}
+img a {border:none; border:0;}
+
+a { text-decoration: none; color: #000000; cursor: default; }
+
+body { font-family: "invitationsM", Arial, Helvetica, sans-serif}
+
+div	{ margin:0; }
+
+div.wrapper { margin:auto; width:100%; max-width: 860px; }
+div.header img { width:100%; height:auto; }
+
+div.invitation { padding: 15px; background-color: #fcf2f3 }
+div.invitation div.inv_border { padding:30px 10px; border:1px solid #FFFFFF; text-align: center; }
+div.invitation p.invitation_header { font-size: 22px; font-weight: 700; line-height: 40px;}
+div.invitation p.invitation_main_text { font-size: 18px; line-height: 35px; }
+div.invitation p.invitation_family { font-size:20px; line-height: 35px; }
+div.invitation p.invitation_family span.subscript { font-size: 18px; }
+div.invitation p.invitation_family span.hostname { font-size: 22px; font-weight: 700; }
+
+div.extra_info img { width:100%; height:auto; }
+
+div.location { padding: 10px; background-color: #fcf2f3; }
+div.location div#map { width: 100%; height: 300px; }
+div.location div.call_navi { position: absolute; margin-top: -30px; height:40px; background-color: #FFFFFF; text-align: right; z-index: 99999;}
+div.location div.call_navi img { margin-top: -10px; margin-right: 15px; border-radius: 10px; -webkit-box-shadow: 2px 2px 2px #99999999; -moz-box-shadow: 2px 2px 2px #99999999; box-shadow: 2px 2px 2px #99999999; }
+div.location div.call_navi span { margin-right: 10px; }
+div.location div.address { padding: 10px; padding-top:30px; border:1px solid #FFFFFF; background-color: #fcf2f3; line-height: 20px; }
+div.location div.address div { padding: 0 10px; }
+div.location div.address span { font-weight: 700; }
+div.location div.address ul { padding-left: 10px; }
+
+div.calltohost { padding: 15px 0; background-color: #EEEEEE }
+div.calltohost li.call_btn { display: inline-block; padding-left: 2px; width: calc(50% - 5px); }
+div.calltohost li.call_btn p { float:left; }
+div.calltohost li.call_btn p.call_txt { margin: 4px 10px; }
+div.calltohost li.call_btn span { display: block; text-indent: -5px; font-size:14px; font-weight: 700; }
+div.calltohost li.call_btn div.call_wrap { margin: auto; width: 150px; }
+
+div.sharesns { background-color: #333333; text-align: center; height: 70px; }
+div.sharesns p { float:left; }
+div.sharesns div { margin: auto; padding: 15px; width: 150px; color: #DDDDDD;}
+div.sharesns img { margin-left: 20px; border-radius: 5px; }
+div.sharesns span { display: block; margin-top: 3px; font-size: 14px; }
+
+div.title_image { text-align: center; }
+div.title_image img { width: 50px; }
+div.content_title { padding-bottom: 10px; text-align: center; }
+div.content_title p { font-size:18px; font-weight: 700; height: 50px; line-height: 50px; }
+div.content_title.wildflower img { width:225px; margin-bottom: -40px; }
+
+
+
+@font-face {
+    font-family: 'invitationsEB';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/invitationsEB.eot);
+    src: url(../fonts/invitationsEB.woff) format('woff'),
+         url(../fonts/invitationsEB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'invitationsM';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/invitationsM.eot);
+    src: url(../fonts/invitationsM.woff) format('woff'),
+         url(../fonts/invitationsM.ttf) format('truetype');
+}

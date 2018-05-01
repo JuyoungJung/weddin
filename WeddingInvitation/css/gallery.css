@@ -1,0 +1,24 @@
+div.gallery { padding: 10px; margin-bottom: 30px; }
+
+button.slick-prev { width:32px; height:100%; text-indent:-9999px; position:absolute; top:0; left:0; background: #FFF url(../img/ico/prev.png) 0 center no-repeat; border:none; cursor:pointer; z-index:4; }
+button.slick-next { width:32px; height:100%; text-indent:-9999px; position:absolute; top:0; right:0; background: #FFF url(../img/ico/next.png) 100% center no-repeat; border:none; cursor:pointer; z-index:4; }
+
+.slider-for .slick-slide { height: auto; }
+.slider-for .slick-slide img { width: 100%; }
+.slider-nav { padding: 10px 0px; }
+.slider-nav .slick-slide {  height: auto; padding : 5px; }
+.slider-nav .slick-slide img { width: 100%; }
+/* .slider-nav .slick-slide:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 
+      inset 0 0 15px #fff,
+      inset 0 0 15px #fff,
+      inset 0 0 15px #fff,
+      inset 0 0 15px #fff;
+} */
